@@ -93,7 +93,7 @@
 		</div>
 		
   <div class="form-row">
-  
+  test
     <div class="col-md-4 mb-3">
       <label for="addProduct"><fmt:message key="productId" /></label>
       <input type="text" class="form-control" id="addProduct" name="addProduct" >
