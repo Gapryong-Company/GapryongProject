@@ -31,5 +31,8 @@ function form_check_addProduct() {
 		back.focus();
 		return false;
 	}
+	if(!(filename.value)){
+	alert("게임 이미지를 등록해주세요");
+	return false;}
 	document.registerNewProduct.submit();
 }

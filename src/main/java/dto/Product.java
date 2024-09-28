@@ -35,9 +35,9 @@ public class Product implements Serializable {
 	}
 
 
-	public Product(String peoductId, String pname) {
+	public Product(String productId, String pname) {
 		super();
-		this.productId = peoductId;
+		this.productId = productId;
 		this.pname = pname;
 	}
 
