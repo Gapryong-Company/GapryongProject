@@ -86,8 +86,8 @@
 				</div>
 			<div class="col-6">
 			<h3>
-				<a href="?language=ko" onclick ="changeLanuage('ko')">Korean</a> |
-				<a href="?language=en" onclick ="changeLanuage('en')">English</a>
+				<a href="?language=ko">Korean</a> |
+				<a href="?language=en">English</a>
 			</h3>
 		</div>
 		</div>
