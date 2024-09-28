@@ -27,6 +27,15 @@
     <link rel="stylesheet" href="../resources/css/icomoon.css">
     <link rel="stylesheet" href="../resources/css/style.css">
   </head>
+  <script>
+  	function addToCart(){
+  		if(confirm("좋아요를 누르시겠습니까?")){
+  			document.addForm.submit();
+  		}else{
+  			document.addForm.reset();
+  		}
+  	}
+  </script>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  <!-- header include-->
@@ -53,8 +62,11 @@
 	  					<p><b>개발자 이름 : </b><span><%=product.getProgramName() %></span></p>
 	  					<p><b>게임 장르 : </b><span><%=product.getDescription() %></span></p>
   					    <p>
-  					        <a href="#" class="btn btn-info">게임 보러가기 &raquo;</a>
-  					        <a href="./index.jsp#projects-section" class="btn btn-secondary">상품 목록 &raquo;</a>
+  					    	<form action="./addCart.jsp?id=<%= product.getProductId() %>" name="addForm" method="post">
+  					    		<a href="#" class="btn btn-info my-2">게임 보러가기 &raquo;</a>
+  					        	<input onclick = "addToCart();" herf="./index.jsp#products" class="btn btn-danger" value = "좋아요" type="button" />
+  					        	<a href="#" class="btn btn-secondary my-2">보러가기 &raquo;</a>
+  					    	</form>
   					    </p>
 	  				</div>
 	  				<div class="col-md-6">
